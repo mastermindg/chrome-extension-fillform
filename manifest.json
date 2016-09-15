@@ -4,16 +4,14 @@
   "description": "This extension will populate the selected form field on a page",
   "version": "1.0",
   "browser_action": {
-   "default_icon": "icon.png",
-   "default_title": "Fill in the form"
-  },
-  "background": {
-        "page": "pages/background.html",
-        "persistent": false
+      "default_title": "Set your form.",
+      "default_icon": "icon.png",
+      "default_popup": "pages/popup.html"
   },
   "permissions": [
-   "contextMenus",
-   "activeTab",
-   "storage"
+    "contextMenus",
+    "activeTab",
+    "storage",
+    "tabs", "http://*/*", "https://*/*"
   ]
 }
